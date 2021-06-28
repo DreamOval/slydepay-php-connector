@@ -1,3 +1,8 @@
+
+#DEPRECATION NOTICE 
+This connector will be completely unmaintained and will remain listed until end of year 2021. Thanks to all of you who  trusted it and used it
+
+
 Slydepay PHP Connector
 =====================
 
