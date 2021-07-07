@@ -9,14 +9,18 @@ class OrderItem
     protected $UnitPrice;
     protected $Quantity;
     protected $SubTotal;
+    protected $Description;
+    protected $ImageUrl
 
-    public function __construct($itemCode, $itemName, $unitPrice, $quantity)
+    public function __construct($itemCode, $itemName, $unitPrice, $quantity, $description = null, $imageUrl = null)
     {
         $this->ItemCode = $itemCode;
         $this->ItemName = $itemName;
         $this->UnitPrice = $unitPrice;
         $this->Quantity = $quantity;
         $this->SubTotal = $unitPrice * $quantity;
+        $this->Description = $description;
+        $this->ImageUrl = $imageUrl;
     }
 
     public function subTotal()
